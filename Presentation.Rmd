@@ -1,0 +1,148 @@
+---
+title: |
+  | 
+  | **Both sexes engage in same-sex sexual behaviour in *Colobus* *angolensis* *ruwenzorii*:**
+  | **Reports of same-sex mounting**
+
+author:
+  - name: Karyn A. Anderson
+    affil: 1
+    orcid: '0009-0002-7711-990X' 
+  - name: Julie A. Teichroeb
+    affil: 1
+affiliation:
+  - num: 1
+    address: Department of Anthropology, University of Toronto Scarborough
+column_numbers: 3
+output: 
+  posterdown::posterdown_html:
+    self_contained: false
+#    css: style.css
+logoright_name: "utoronto.svg.png"
+logoleft_name: "conference.png"
+poster_height: "36in"
+poster_width: "48in"
+#titlebox_borderwidth: "2in"
+title_textsize: "50pt"
+author_textsize: "45pt"
+body_textsize: "49px"
+affiliation_textsize: "60pt"
+references_textsize: "30pt"
+knit: pagedown::chrome_print #produces PDF of poster
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = "/Users/karynanderson/Documents/Conferences/2SLGBTQ+ IN Stem/Presentation")
+getwd()
+data <- read.csv("SSSB.csv", header = T)
+library(kableExtra)
+#remotes::install_github("haozhu233/kableExtra")
+#devtools::install_github("ropenscilabs/icon")
+#remotes::install_github("mitchelloharawild/icons")
+library(icons)
+#download_ionicons(version = "dev")
+#download_academicons(version = 'dev')
+#devtools::install_github("hrbrmstr/qrencoder")
+#install.packages("qrcode")
+library(qrcode)
+
+#png("qrplot.png")
+#qr_code("https://scholar.google.com/citations?user=7ChUzyQAAAAJ&hl=en")
+#dev.off()
+```
+
+# Background
+
+* Research on same-sex sexual behaviour in primates is focussed in few species (e.g. bonobos, *Pan paniscus*, and Japanese macaques, *Macaca fuscata*: Vasey, 2007)
+
+* Few reports on same-sex sexual behaviour in some taxa may be due to lack of expression, but could also represent methodological or practical challenges, such as when:
+  + Behaviours are difficult to observe, for example in arboreal, cryptic, or nocturnal species (Ramsay & Teichroeb, 2019)
+  + Species are not represented in captivity (Ramsay & Teichroeb, 2019)
+  + Behaviours have been observed but have not been published (Anderson et al., Submitted)
+
+* Same-sex sexual behaviour has recently been reported in *Colobus* *vellerosus* (Teichroeb et al., 2023), but no reports are available for other black-and-white colobus species
+
+* **Here, I report for the first time observations of same-sex sexual behaviour in *Colobus* *angolensis* *ruwenzorii* **
+
+# Methods
+
+Data were collected during a three-month field season from May 2022 - August 2022 in the Manwa Forest Reserve (~280ha) near Lake Nabugabo, Masaka District, Uganda. Follows occurred from 8:00 to 16:00 each day, alternating between three focal core units consisting of multiple males and multiple females. Scan samples of all group members behaviour were taken every 15 minutes, and 10-minute focal animal samples were be collected from each adult and subadult between scans. All observations of sexual behaviour were recorded as they were seen (Altmann, 1974). 
+
+# Definitions
+
+Same-sex sexual behaviour is typically defined as genital contact or manipulation between members of the same sex (Vasey, 1995). As sexual behaviour often includes a sequence of behaviour before and after genital contact (Enomoto, 1974), these were also considered. Within *C. a. ruwenzorii* these behaviours can include:
+
+* **Presenting for sex:** Sexual solicitation involving positioning hips towards another and lifting hips in the air
+
+* **Hip grab:** Usually following a sexual solicitation, the solicitee grabs the hips of the solicitor and positions themselves behind them
+
+* **Mounting:** When one individual mounts another
+
+```{r, fig.align = "center"}
+knitr::include_graphics("monkeys5.png")
+```
+
+
+# Results
+**Table 1** Observations of same-sex sexual behaviour
+```{r mytable, out.width='90%'}
+html <- knitr::kable(data,align = 'c',"html")
+kable_styling(html, font_size = 50)
+```
+
+
+
+* **Four events of same-sex sexual behaviour were observed** during the three-month field season (described in Table 1)
+
+* Two events involved sexual solicitation without mounting or ejaculation (1, 4)
+
+* Two events involved mounting (2, 3)
+
+* One event was between females (2), while the other three events were between males (1, 3, 4)
+
+# Discussion
+
+* These observations of same-sex sexual behaviour in *C. a. ruwenzorii* provide evidence that same-sex sexual behaviour occurs among both sexes in this species, as reported in other black-and-white colobus (Teichroeb et al., 2023)
+
+* Same-sex sexual behaviour occurred most frequently in adult males, similar to reports in *C. vellerosus,* but this trend may change with more data
+
+* Sequences of behaviour generally followed the same sequence observed in opposite-sex sexual behaviour (approach and present, followed by either mounting or grooming)
+
+
+# Conclusion
+
+Given the lack of data on same-sex sexual behaviour in black-and-white colobus, it is difficult to conclude on the evolutionary or functional significance of this behaviour. However, there is now evidence that same-sex sexual behaviour occurs in at least two black-and-white colobus species. More reporting on same-sex sexual behaviour in African colobines would improve our ability to:
+
+* Draw evolutionary and functional conclusions
+
+* Conduct meta-analyses
+
+* Increase the strength of phylogenetic analysis
+
+# Acknowledgements
+
+I would like to thank my field assistants Edward Mujjuzi and Hannington Kakeeto, as well as Eve Smeltzer, Erica Fowler, and Jai Tiarks for their assistance and support during data collection. Funding provided by the Natural Sciences and Engineering Research Council (NSERC) and the University of Toronto. This research was approved by the University of Toronto Animal Care Committee under Animal Use Protocol #20012354, and by the Uganda Wildlife Authority and the Uganda National Council of Science and Technology. This poster was created using the posterdown package in R Markdown (Thorne,  2019).
+
+# References
+```{r insert QR code, include=FALSE}
+knitr::include_graphics("qr-code.png") 
+# solves issue of R not finding the qr code file. Can also use a chunk like this to insert any figure or picture
+```
+
+<div style="display: flex; align-items: flex-start;">
+  <div style="flex: 3;">
+  <p style="line-height: 0.5;">References and .Rmd file can be found here</p>
+  <p style="line-height: 0.5;">`r icon_style(icons::ionicons("logo-twitter"), scale = 1.0)`karynanderson_</p>
+  <p style="line-height: 0.5;">`r icon_style(icons::ionicons("mail-outline"), scale = 1.0)`karyn.anderson@mail.utoronto.ca</p>
+  </div>
+  <div style="flex: 1; text-align: right;">
+  <img src="qr-code.png" alt="Alt text" style="max-width: 175px;">
+  </div>
+</div>
+
+
+
+
+
+
