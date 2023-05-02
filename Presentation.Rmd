@@ -7,7 +7,7 @@ title: |
 author:
   - name: Karyn A. Anderson
     affil: 1
-    orcid: '0009-0002-7711-990X' 
+    orcid: '' 
   - name: Julie A. Teichroeb
     affil: 1
 affiliation:
@@ -134,7 +134,7 @@ knitr::include_graphics("qr-code.png")
   <div style="flex: 3;">
   <p style="line-height: 0.5;">References and .Rmd file can be found here</p>
   <p style="line-height: 0.5;">`r icon_style(icons::ionicons("logo-twitter"), scale = 1.0)`karynanderson_</p>
-  <p style="line-height: 0.5;">`r icon_style(icons::ionicons("mail-outline"), scale = 1.0)`karyn.anderson@mail.utoronto.ca</p>
+  <p style="line-height: 0.5;">`r icon_style(icons::ionicons("mail-outline"), scale = 1.0)`karyn.anderson @ mail.utoronto.ca</p>
   </div>
   <div style="flex: 1; text-align: right;">
   <img src="qr-code.png" alt="Alt text" style="max-width: 175px;">
